@@ -48,7 +48,7 @@ const OnboardModal = () => {
         return (
           <>
             <p className={styles.modalText}>
-              You haven't connected your account to Core Wallet!
+              You haven't connected your account to Core Wallet! Kindly connect
             </p>
             <CustomButton
               title="Connect Account"
