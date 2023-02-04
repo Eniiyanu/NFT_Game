@@ -1,7 +1,11 @@
 import React from 'react'
-import {userNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
+
+import {logo, heroImg} from "../assets";
+import styles  from '../styles';
 const PageHOC = () => {
-  return (
+  const navigate = useNavigate
+    return (
     <div>PageHOC</div>
   )
 }
