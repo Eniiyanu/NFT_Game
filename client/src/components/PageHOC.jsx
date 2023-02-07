@@ -3,14 +3,14 @@ import { useNavigate } from "react-router-dom";
 
 import { logo, heroImg } from "../assets";
 import styles from "../styles";
-const PageHOC = () => {
+const PageHOC = (Components, title, description) => {
   const navigate = useNavigate();
 
   return (
     <div className={styles.hocContainer}>
-      <div className={styles.hocContainer}>
+      <div className={styles.hocContentBox}>
         <img
-          src="{logo}"
+          src={logo}
           alt="logo"
           className="{styles.hoclogo}"
           onClick={() => navigate("/")}
