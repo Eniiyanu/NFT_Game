@@ -12,11 +12,16 @@ const PageHOC = (Components, title, description) => {
         <img
           src={logo}
           alt="logo"
-          className="{styles.hoclogo}"
+          className={styles.hocLogo}
           onClick={() => navigate("/")}
         />
-        <div className="{styles.hocBodyWrapper}">
+        <div className={styles.hocBodyWrapper}>
+          <div className="flex flex-row w-full"> 
+          <h1>{title}</h1>
+          </div>
+          <p>{description}</p>
 
+          <Component/>
         </div>
       </div>
     </div>
