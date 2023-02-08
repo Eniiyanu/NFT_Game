@@ -15,6 +15,9 @@ const PageHOC = (Components, title, description) => {
           className="{styles.hoclogo}"
           onClick={() => navigate("/")}
         />
+        <div className="{styles.hocBodyWrapper}">
+
+        </div>
       </div>
     </div>
   );
