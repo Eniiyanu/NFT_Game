@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import { logo, heroImg } from "../assets";
 import styles from "../styles";
-const PageHOC = (Components, title, description) => {
+const PageHOC = (Component, title, description) => {
   const navigate = useNavigate();
 
   return (
