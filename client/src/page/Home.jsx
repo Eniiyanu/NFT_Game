@@ -12,6 +12,9 @@ const Home = () => {
 
 export default PageHOC( 
 Home,
-<>Welcome to Avax Gods <br /> A web3 Card game.</>
+<>Welcome to Avax Gods <br /> A Web3 Card game</>,
+<>A battle-style card game built on Avalanche's C-Chain. <br />
+
+The game is built with React, Solidity, and Avalanche's C-Chain. </>
 
 );
