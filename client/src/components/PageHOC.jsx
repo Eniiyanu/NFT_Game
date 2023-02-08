@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import { logo, heroImg } from "../assets";
 import styles from "../styles";
-const PageHOC = (Component, title, description) => {
+const PageHOC = (Component, title, description) => () => {
   const navigate = useNavigate();
 
   return (
@@ -17,15 +17,15 @@ const PageHOC = (Component, title, description) => {
         />
         <div className={styles.hocBodyWrapper}>
           <div className="flex flex-row w-full"> 
-          <h1>{title}</h1>
+          <h1 className= {'flex ${styles.headText} head-text'} >{title}</h1>
           </div>
           <p>{description}</p>
 
-          <Component/>
+          <Component />
         </div>
       </div>
     </div>
   );
 };
 
-export default PageHOC;
+export default PageHOC

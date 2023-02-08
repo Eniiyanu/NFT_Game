@@ -10,4 +10,8 @@ const Home = () => {
   )
 };
 
-export default PageHOC;
+export default PageHOC( 
+Home,
+<>Welcome to Avax Gods <br /> A web3 Card game.</>
+
+);
