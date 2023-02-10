@@ -12,5 +12,11 @@ import { useNavigate } from "react-router-dom";
 const GlobalContext = createContext();
 
 export const GlobalContextProvider = ({ children }) => {
-  return <GlobalContext.Provider value={{}}></GlobalContext.Provider>;
+  return <GlobalContext.Provider value={{
+
+demo: 'test'
+
+  }}></GlobalContext.Provider>;
 };
+
+export const useGlobalContext = () => useContext(GlobalContext);
