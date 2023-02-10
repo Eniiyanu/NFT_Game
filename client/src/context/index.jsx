@@ -12,9 +12,19 @@ import { useNavigate } from "react-router-dom";
 const GlobalContext = createContext();
 
 export const GlobalContextProvider = ({ children }) => {
+    const {walletAddress, setWalletAddress} = useState(null);
+    const updateCurrentWalletAddress = async () => {
+        const accounts = await window.ethereum.request({
+            method: "eth_requestAccounts",
+        })
+
+
+
+
+
   return <GlobalContext.Provider value={{
 
-demo: 'test'
+
 
   }}>
     {children}
