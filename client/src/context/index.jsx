@@ -16,7 +16,9 @@ export const GlobalContextProvider = ({ children }) => {
 
 demo: 'test'
 
-  }}></GlobalContext.Provider>;
+  }}>
+    {children}
+  </GlobalContext.Provider>;
 };
 
 export const useGlobalContext = () => useContext(GlobalContext);
