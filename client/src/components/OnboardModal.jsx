@@ -61,7 +61,7 @@ const OnboardModal = () => {
         return (
           <>
             <p className={styles.modalText}>
-              You're on a different network. Switch to Fuji C-Chain.
+              You're on a different network. Kindly switch to Fuji C-Chain.
             </p>
             <CustomButton title="Switch" handleClick={SwitchNetwork} />
           </>
