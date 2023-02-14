@@ -18,6 +18,6 @@ export default PageHOC(
   </>,
   <>
     A battle-style card game built on Avalanche's C-Chain. <br />
-    The game is built with React, Solidity, and Avalanche's C-Chain.
+    The game is built with React, Solidity, and Avalanche's C-Chain. Enjoy!
   </>
 );
