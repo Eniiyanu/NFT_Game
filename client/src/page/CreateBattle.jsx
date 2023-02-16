@@ -17,6 +17,6 @@ export default PageHOC(
   <>
     Create your own battle and enjoy the game. <br />
     The game is built with React, Solidity, and Avalanche's C-Chain.
-    Let's Game!!!
+    Let's us Game!!!
   </>
 );
