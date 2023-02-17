@@ -1,7 +1,7 @@
 import React from "react";
 import { PageHOC } from "../components";
 const Home = () => {
-  const {demo} = useGlobalContext();
+  //const {demo} = useGlobalContext();
   
   return (
     <div>
