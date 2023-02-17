@@ -23,6 +23,10 @@ export const GlobalContextProvider = ({ children }) => {
     updateCurrentWalletAddress();
   }, []);
 
+useEffect(() => {
+  setSmartContractAndProvider = async() => {
+    const 
+}, []);
 
 
   return <GlobalContext.Provider value={{}}>{children}</GlobalContext.Provider>;
