@@ -25,7 +25,8 @@ export const GlobalContextProvider = ({ children }) => {
 
 useEffect(() => {
   setSmartContractAndProvider = async() => {
-    const 
+    const web3modal = new Web3Modal();
+    const connection = await web3modal.connect();
 }, []);
 
 
