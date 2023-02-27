@@ -15,8 +15,8 @@ const GlobalContext = createContext();
 
 export const GlobalContextProvider = ({ children }) => {
   const [walletAddress, setWalletAddress] = useState("");
-  const [provider, setProvider] = useState("");
-  const [contract, setcontract] = useState("");
+  const [provider, setProvider] = useState('');
+  const [contract, setcontract] = useState('');
 
   //Set the wallet address
   const updateCurrentWalletAddress = async () => {
@@ -42,7 +42,7 @@ export const GlobalContextProvider = ({ children }) => {
       const newContract = new ethers.Contract(ADDRESS, ABI, signer);
 
       setProvider(newProvider);
-      setContatct(newContract);
+      setContract(newContract);
     };
     setSmartContractAndProvider();
   }, []);
