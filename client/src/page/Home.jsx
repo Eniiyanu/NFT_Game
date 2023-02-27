@@ -15,6 +15,13 @@ const Home = () => {
 
 
      />
+<CustomButton 
+
+title = "Register"
+handleClick = {() => {}}
+  restType= "mt-6"
+/>
+
     </div>
   );
 };
