@@ -5,6 +5,19 @@ const Home = () => {
   //const {demo} = useGlobalContext();
   const { contract, walletAddress } = useGlobalContext();
   const [playerName, setPlayerName] = React.useState("");
+
+  const handleClick = async () => {
+    try {
+      const tx = await contract.registerPlayer(playerName, {
+        from: walletAddress,
+      });
+      console.log(tx);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+
   return (
     <div className="flex flex-col">
      <CustomInput
@@ -18,7 +31,7 @@ const Home = () => {
 <CustomButton 
 
 title = "Register"
-handleClick = {() => {}}
+handleClick = {handleClick}
   restStyles= "mt-6"
 />
 
