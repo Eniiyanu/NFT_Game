@@ -19,7 +19,7 @@ const Home = () => {
 
 title = "Register"
 handleClick = {() => {}}
-  restType= "mt-6"
+  restStyles= "mt-6"
 />
 
     </div>
