@@ -9,14 +9,12 @@ const CustomInput = ({label, placeholder, value, handleValueChange}) => {
     <label htmlfor ='name' className={styles.label}> {label} </label>
 
     <input type ="text"  placeholder={placeholder} value={value} onChange={(e) => {
-      if (e.target.value === '' || regex.test(e.target.value)) handleValueChange(e.target.value)
+      if (e.target.value === '' || regex.test(e.target.value)) handleValueChange(e.target.value);
     
-
-
-
-    }} className={styles.input} />
-     
+    }} className={styles.input} /> 
   
 </>
-)
+  )
+  }
+
 export default CustomInput
