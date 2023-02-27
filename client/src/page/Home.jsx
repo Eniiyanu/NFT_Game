@@ -5,9 +5,11 @@ const Home = () => {
   //const {demo} = useGlobalContext();
   const { contract, walletAddress } = useGlobalContext();
   return (
-    <div>
-      <h1 className="text-5xl p-3 "> </h1>
-     
+    <div className="flex flex-col">
+     <CustomInput
+
+
+     />
     </div>
   );
 };
