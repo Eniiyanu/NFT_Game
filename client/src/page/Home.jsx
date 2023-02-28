@@ -22,7 +22,7 @@ const Home = () => {
     <div className="flex flex-col">
      <CustomInput
   label = "Player Name"
-  placeholder = "Enter your  Player name"
+  placeholder = "Enter your  First name"
   value = {playerName}
   handleValueChange = {(e) => setPlayerName(e.target.value)}
 
